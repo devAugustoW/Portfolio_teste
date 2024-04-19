@@ -1,0 +1,32 @@
+.scrollup {
+   position: fixed;
+   right: 1rem;
+   bottom: 1rem;
+   background-color: rgb(80,80,90);
+   opacity: 0.8;
+   padding: 0.3rem 0.5rem;
+   border-radius: 0.4rem;
+   z-index: 10;
+   transition: 0.4s;
+}
+
+.scrollup__icon {
+   font-size: 1.5rem;
+   color: #fff;
+}
+
+.scrollup:hover {
+   background-color: #2c2c2c;
+}
+
+/* Show Scroll */
+.move-scroll {
+   bottom: 3rem;
+}
+
+@media screen and (max-width: 770px){
+   .scrollup{
+      position: fixed;
+      bottom: 5rem;
+   }
+}

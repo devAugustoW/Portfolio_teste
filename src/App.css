@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  padding-top: 4.5rem;
+  background-color: #050505;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(80,80,90);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+  color:rgb(80,80,90);
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: #441c7c;
+  color: #d3d3d3;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+ 
+ .button:hover {
+  background-color: #222121;
+}
+
+ .button__icon {
+  margin-left: 0.5rem;
+}
+ 
+ .button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+   
+/* For small devices */
+@media screen and (max-width: 480px) {
+
+}

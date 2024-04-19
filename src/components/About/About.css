@@ -1,0 +1,138 @@
+.about {
+   max-width: 1200px;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 6rem 1.5rem 0 1.5rem;
+   text-align: center;
+   background-color: #050505;
+}
+
+.section__about-title {
+   font-size: 2.5rem;
+   color: #6c2cbc;
+}
+
+.section__about-subtitle{
+   display: block;
+   font-size: 0.87rem;
+   font-weight: 400;
+   margin-bottom: 3.4rem;
+   color: #fff;
+}
+
+
+.about__container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1.5rem;
+}
+
+.about__img{
+   width: 350px;
+   border-radius: 1.5rem;
+   justify-self: center;
+   box-shadow: 1px 6px 8px #242c58b4, -1px -4px 8px #242c58b4;
+}
+
+.about__info{
+   display: grid;
+   grid-template-columns: repeat(2, 140px);
+   gap: 30%;
+   margin-bottom: 2rem;
+}
+
+.about__box{
+   background-color: rgba(18, 18, 20, 0.9);
+   box-shadow: 1px 6px 20px #242c58b4, -1px -4px 30px #242c58b4;
+   border-radius: 0.75rem;
+   text-align: center;
+   padding: 1rem 1.25rem;
+}
+
+.about__icon{
+   font-size: 1.5rem;
+   color: #d3d3d3;
+   margin-bottom: 0.5rem;
+}
+
+.about__title{
+   font-size: 0.875rem;
+   font-weight: 500;
+   color: #d3d3d3;
+}
+
+.about__subtitle{
+   font-size: 0.625rem;
+   color: #d3d3d3;
+}
+
+.about__description {
+   padding: 0 4rem 0 0;
+   margin-bottom: 2.5rem;
+   color: #d3d3d3;
+   text-align: justify;
+}
+
+.cv{
+   box-shadow: 1px 6px 100px #242c58b4, -1px -4px 15px #242c58b4;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+   .about__container {
+      grid-template-columns: 1fr;
+      row-gap: 2.5rem;
+   }
+
+   .about__img {
+      width: 280px;
+   }
+
+   .about__box {
+      padding: 0.75rem 0.5rem;
+   }
+
+   .about__data {
+      text-align: center;
+   }
+
+   .about__info {
+      justify-content: center;
+   }
+
+   .about__description {
+      padding: 0 4rem;
+      margin-bottom: 2rem;
+   }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+   .about__info {
+      gap: 20%;
+   }
+
+   .about__description {
+      font-size: 1.25rem;
+      padding: 0 0;
+   }
+
+   .cv {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      
+   }
+}
+
+/* For small devices */
+@media screen and (max-width: 480px) {
+   .section__about-subtitle{
+      margin-bottom: 3rem;
+   }
+   
+   .about__description {
+      font-size: 1rem;
+   }
+}
